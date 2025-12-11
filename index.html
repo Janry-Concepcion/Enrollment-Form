@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Janry Concepcion - Enrollment Form</title>
+</head>
+<body>
+ 
+    <div class="container">
+        <Form action="#">
+
+            <div class="logo">
+                <img src="image/sti-logo.png" alt="This the logo of STI">
+                <h1 >Enrollment Form</h1>
+            </div>
+        
+
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Given Name" required><br>
+    
+            <label for="fname">Middle Name:</label><br>
+            <input type="text" id="mname" name="mname" placeholder="Middle Name" required><br>
+    
+            <label for="fname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Surname" required><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email Address" required><br>
+    
+            <label for="fname">Current Address:</label><br>
+            <input type="text" id="address" name="address" placeholder="Brgy, City/Municipality, Province"required><br>
+
+            <label for="courses">Courses:</label>
+            <select id="programs" name="program" style="color: #757575;">
+                <option value="" disabled selected hidden>Choose a program</option>
+                <option value="au">Bachelor of Science in Information Technology</option>
+                <option value="ca">Bachelor of Science in Computer Science</option>
+                <option value="usa">Bachelor of Science in Computer Engineering</option>
+            </select>
+
+            <script>
+                document.getElementById('programs').addEventListener('change', function() {
+                this.style.color = '#000';
+                });
+            </script>
+            
+            <label for="birthday">Date of Birth:</label><br>
+            <input type="date" id="birthday" name="birthday"><br>
+           
+
+
+            <label for="gender">Gender:</label><br>
+            <div class="Gender">
+            <input type="radio" id="male" name="gender"value="Male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender"value="Female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="nonbinary" name="gender" value="Non-Binary">
+            <label for="nonbinary">Non-Binary</label><br>
+            </div>
+
+            <div class="button">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            </div>
+        </Form>
+    </div>
+
+</body>
+</html>

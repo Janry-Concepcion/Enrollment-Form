@@ -1,0 +1,208 @@
+.logo{
+    padding-inline-start: 100px;
+    margin-bottom: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    gap:15px;
+    justify-content: center;
+}
+
+img{
+    width: 90px;
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: auto;
+    margin-left: -99px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 15px #002945;
+}
+.container{
+    text-align: center;
+}
+
+body{
+    background-color: #e7ecef;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+input[type=text]{
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 1.5px solid #274c77;
+    background-color: #ced4da;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-top: 4px;
+    font-size: 14px;
+}
+input[type=email]{
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 1.5px solid #274c77;
+    background-color: #ced4da;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-top: 4px;
+    font-size: 14px;
+}
+input::placeholder {
+    font-size: 14px;
+}
+label{
+    text-align: left;
+    color: black;
+    font-size: 16px;
+    padding: 2px
+}
+
+form{
+    width: 310px;
+    height: auto;
+    padding: 12px 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #6096ba;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: left;
+    box-shadow:  2px 2px 20px #002945;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+form:hover{
+    border-color: 5px solid #003d5b;
+    box-shadow: 0 0 20px rgba(0, 61, 91, 0.8);
+
+}
+select {
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 1.5px solid #274c77;
+    background-color: #ced4da;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-top: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+select option {
+    color: black;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 1.5px solid #274c77;
+    background-color: #ced4da;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-top: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.Gender{
+    margin-bottom: 8px;
+    margin-top: 4px;
+    margin-inline-start: 10px; 
+    margin-left: 10px;
+
+}
+input[type=radio]{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button{
+    text-align: center;
+    margin-top: 5px;
+}
+input[type=submit]{
+    padding: 8px;
+    width: 30%;
+    border-radius: 8px;
+    background-color: #003d5b;
+    border: 3px solid #003d5b;
+    color: #e7ecef;
+    text-align: center;
+    margin: 5px 5px; 
+    font-size: 14px;
+}
+input[type=reset]{
+    padding: 8px;
+    width: 30%;
+    border-radius: 8px;
+    border: 3px solid #003d5b;
+    background-color: #003d5b;
+    color: #e7ecef;
+    text-align: center;
+    font-size: 14px;
+}
+input[type=submit]:hover{
+    background-color: #002945;
+    text-align: center;
+    cursor: pointer;
+}
+input[type=reset]:hover{
+
+    background-color: #002945;
+    border: 3px solid #002945;
+    text-align: center;
+    cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+    form {
+        width: 10%;
+        padding: 10px 10px;
+    }
+    .logo {
+        padding-inline-start: 0;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+    img {
+        width: 70px;
+        margin-left: 0;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input[type=submit],
+    input[type=reset] {
+        width: 40%;
+        font-size: 12px;
+        padding: 7px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    form {
+        width: 60%;
+    }
+}
